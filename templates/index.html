@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Learning Predictions</title>
+</head>
+<body>
+    <h1>Machine Learning Predictions</h1>
+    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload CSV File</button>
+    </form>
+
+    <hr>
+
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction_result }}</p>
+</body>
+</html>
