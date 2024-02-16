@@ -6,7 +6,6 @@ from sklearn.impute import SimpleImputer
 import pandas as pd
 import io
 
-
 app = Flask(__name__)
 rf_model = pickle.load(open('random_forest_model.pkl', 'rb'))
 # imputer = SimpleImputer(strategy='mean')
